@@ -10,8 +10,9 @@ from llama_index.core.response.pprint_utils import pprint_response
 
 # Load environment variables
 load_dotenv()
-st.sidebar.title("settings")
-OPEN_API_KEY=st.sidebar.text_input("Enter you open_api_key:",type="password")
+# st.sidebar.title("settings")
+# OPEN_API_KEY=st.sidebar.text_input("Enter you open_api_key:",type="password")
+st.secrets["OPENAI_API_KEY"]
 # os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 # os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 # os.environ["LANGCHAIN_TRACING_V2"] = "true"
