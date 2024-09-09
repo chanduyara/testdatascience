@@ -9,10 +9,12 @@ from llama_index.core.response.pprint_utils import pprint_response
 
 # Load environment variables
 load_dotenv()
-os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+st.sidebar.title("settings")
+OPEN_API_KEY=st.sidebar.text_input("Enter you open_api_key:",type="password")
+# os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
+# os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+# os.environ["LANGCHAIN_TRACING_V2"] = "true"
+# os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
 
 # Set up Streamlit
 st.title("Conversational RAG With PDF uploads and chat history")
