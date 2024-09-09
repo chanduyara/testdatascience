@@ -1,12 +1,7 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
-from llama_index.core import (
-    VectorStoreIndex,
-    SimpleDirectoryReader,
-    StorageContext,
-    load_index_from_storage,
-)
+from llama_index.core import StorageContext, load_index_from_storage
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.query_engine import RetrieverQueryEngine
@@ -45,6 +40,8 @@ if not os.path.exists(PERSIST_DIR):
 else:
     # load the existing index
     storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
+    
+
     index = load_index_from_storage(storage_context)
 
 # Load documents from the specified directory
