@@ -8,3 +8,4 @@ llama-index-llms-replicate
 llama-index-embeddings-huggingface
 streamlit
 ipykernel
+llama-index-embeddings-openai
