@@ -8,7 +8,9 @@ llama-index-llms-replicate
 llama-index-embeddings-huggingface
 langchain
 python-dotenv
+streamlit
 ipykernel
+streamlit
 langchain-community
 pypdf
 bs4
