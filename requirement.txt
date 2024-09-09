@@ -1,4 +1,5 @@
-llama-index
+#llama-index
+python-dotenv
 openai
 pypdf
 python-dotenv
